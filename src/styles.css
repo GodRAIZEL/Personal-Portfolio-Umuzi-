@@ -1,4 +1,5 @@
-body,html{
+body,
+html {
 	background: #0c1022;
 	color: #fff;
 	overflow-x: hidden;
@@ -74,13 +75,14 @@ p {
 	color: #fff;
 	background: linear-gradient(45deg, #f06, #3cf, #f06);
 	transition: color 0.3s ease, background 0.3s ease;
+	transition: all 0.3s ease 0s;
 }
 
 #hirebutton:hover {
 	background: linear-gradient(45deg, #3cf, #f06, #3cf);
 }
 
-@media only screen and (min-width: 300px) and(max-width:380px){
+@media only screen and (min-width: 300px) and(max-width:380px) {
 	#HeroImage {
 		height: 20px;
 		width: 20px;
@@ -94,7 +96,7 @@ p {
 	}
 }
 
-@media only screen and (min-width: 425px) and (max-width:560px){
+@media only screen and (min-width: 425px) and (max-width:560px) {
 	#HeroImage {
 		height: 300px;
 		width: 300px;
@@ -176,7 +178,7 @@ p {
 	margin-bottom: 0;
 }
 
-.certificate-link{
+.certificate-link {
 	font-weight: 400;
 	text-decoration: none;
 }
@@ -309,50 +311,55 @@ ul li p {
 	}
 }
 
-.skills-container{
-	display:flex;
-	justify-content:center;
+.skills-container {
+	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.skill{
+.skill {
 	display: flex;
 	justify-content: center;
-	align-items:center;
-	width:300px;
-	height:300px;
+	align-items: center;
+	width: 300px;
+	height: 300px;
 	margin: 10px;
-	background-color: #fff;
+	background-color:#fff;
 	border-radius: 20px;
+	transition: all 0.3s ease 0s;
 }
 
-.image-container{
+.skill:hover{
+	transform: translateY(-8px);
+}
+
+.image-container {
 	display: flex;
-	justify-content:center;
-	align-items:center;
-    height: 180px;
-	width:180px;
-    margin-bottom: 10px;
+	justify-content: center;
+	align-items: center;
+	height: 180px;
+	width: 180px;
+	margin-bottom: 10px;
 }
 
-.skill-1{
+.skill-1 {
 	background-image: url('imgs/html-5.png');
-    background-size: cover;
+	background-size: cover;
 }
 
-.skill-2{
+.skill-2 {
 	background-image: url('imgs/css.png');
-    background-size: cover;
+	background-size: cover;
 }
 
-.skill-3{
+.skill-3 {
 	background-image: url('imgs/bootstrap.png');
-    background-size: cover;
+	background-size: cover;
 }
 
-.skill-4{
+.skill-4 {
 	background-image: url('imgs/js.png');
-    background-size: cover;
+	background-size: cover;
 	border-radius: 17px;
 }
 
@@ -365,15 +372,85 @@ ul li p {
 	padding-bottom: 60px;
 }
 
+.projects {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+
+.projects-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.project {
+	background-color: #fff;
+	width: 380px;
+	margin: 10px 12px;
+	border-radius: 20px;
+	padding: 30px;
+	transition: all 0.3s ease 0s;
+}
+
+.project:hover{
+	transform: translateY(-8px);
+	background-color: #f5f0f0;
+	cursor: pointer;
+}
+
+.project-image {
+	height: 180px;
+	background-color: #3cf;
+	border-radius: 19px;
+}
+
+.project-1{
+	background-image: url('imgs/Nitas Bites.png');
+	background-size: cover;
+}
+
+.project-title {
+	display: flex;
+	justify-content: center;
+	color: #3cf;
+	margin:8px;
+}
+
+.project-description {
+	align-text: center;
+	color: #666;
+}
+
+.project-button-holder{
+	display: flex;
+	justify-content: center;
+}
+
+.project-btn{
+	border-radius:10px;
+	padding:12px 16px;
+	background-color: #3cf;
+	color: #fff;
+	border: 1px solid #3cf;
+	font-weight: 600;
+	transition: all 0.3s ease 0s;
+}
+
+.project-btn:hover{
+	background-color: rgb(51, 175, 216);
+}
 
 #contactmeb {
 	background-color: #3cf;
-	color: #fff
+	color: #fff;
 }
 
 
 .contactme {
+	background-color: #15192e;
 	margin-top: 36px;
+	padding-top: 20px;
 	padding-bottom: 60px;
 }
 
