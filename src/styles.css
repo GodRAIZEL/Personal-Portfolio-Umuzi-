@@ -1,6 +1,7 @@
-body {
+body,html{
 	background: #0c1022;
 	color: #fff;
+	overflow-x: hidden;
 }
 
 h1,
@@ -175,6 +176,11 @@ p {
 	margin-bottom: 0;
 }
 
+.certificate-link{
+	font-weight: 400;
+	text-decoration: none;
+}
+
 .container ul li .circle {
 	position: absolute;
 	width: 20px;
@@ -303,7 +309,55 @@ ul li p {
 	}
 }
 
-.services {
+.skills-container{
+	display:flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+
+.skill{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	width:300px;
+	height:300px;
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.image-container{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+    height: 180px;
+	width:180px;
+    margin-bottom: 10px;
+}
+
+.skill-1{
+	background-image: url('imgs/html-5.png');
+    background-size: cover;
+}
+
+.skill-2{
+	background-image: url('imgs/css.png');
+    background-size: cover;
+}
+
+.skill-3{
+	background-image: url('imgs/bootstrap.png');
+    background-size: cover;
+}
+
+.skill-4{
+	background-image: url('imgs/js.png');
+    background-size: cover;
+	border-radius: 17px;
+}
+
+
+.skills {
 	background-color: #15192e;
 	padding-top: 20px;
 	padding-left: 15px;
@@ -311,19 +365,6 @@ ul li p {
 	padding-bottom: 60px;
 }
 
-#cardheader {
-	background-color: #3cf;
-}
-
-#servicebuttons {
-	background-color: #3cf;
-	color: #fff
-}
-
-
-.card-title {
-	color: rgb(22, 166, 233);
-}
 
 #contactmeb {
 	background-color: #3cf;
