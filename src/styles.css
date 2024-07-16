@@ -410,6 +410,11 @@ ul li p {
 	background-size: cover;
 }
 
+.project-2{
+	background-image: url('imgs/BossBraids.png');
+	background-size: cover;
+}
+
 .project-title {
 	display: flex;
 	justify-content: center;
