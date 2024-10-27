@@ -413,6 +413,11 @@ ul li p {
 	background-size: cover;
 }
 
+.project-3{
+	background-image: url('imgs/bistrobliss.png');
+	background-size: cover;
+}
+
 .project-title {
 	display: flex;
 	justify-content: center;
