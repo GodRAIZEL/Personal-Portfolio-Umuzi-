@@ -5,6 +5,7 @@ html {
 	overflow-x: hidden;
 }
 
+
 h1,
 h2,
 h3,
@@ -24,7 +25,9 @@ p {
 	font-weight: 600;
 }
 
-
+.navbar{
+	background-color: #0c1022;
+}
 
 .nav-link {
 	font-size: 18px;
@@ -56,6 +59,21 @@ p {
 	margin-bottom: 30px;
 }
 
+/*#HeroImage {
+    max-width: 30vw;
+    height: auto;
+    border-radius: 50%;
+    border: 7px solid rgb(235, 83, 144);
+}
+
+@media (max-width: 350px) {
+    #HeroImage {
+        max-width: 70vw;
+				justify-content: center;
+    }
+}
+*/
+
 
 #HeroImage {
 	height: 400px;
@@ -82,17 +100,12 @@ p {
 	background: linear-gradient(45deg, #3cf, #f06, #3cf);
 }
 
-@media only screen and (min-width: 300px) and(max-width:380px) {
-	#HeroImage {
-		height: 20px;
-		width: 20px;
-	}
-}
+
 
 @media only screen and (max-width: 425px) {
 	#HeroImage {
-		height: 200px;
-		width: 200px;
+		height: 160px;
+		width: 160px;
 	}
 }
 
@@ -110,6 +123,7 @@ p {
 
 #aboutmeheading {
 	margin-bottom: 40px;
+	margin-top: 20px;
 }
 
 .text-center {
@@ -123,22 +137,6 @@ p {
 	border: 7px solid rgb(117, 210, 241);
 }
 
-.education {
-	width: 100%;
-	height: auto;
-	display: grid;
-	place-items: center;
-	padding-top: 20px;
-	padding-bottom: 60px;
-}
-
-.education .head {
-	font-size: 29px;
-	color: rgb(22, 166, 233);
-	position: relative;
-	margin-bottom: 120px;
-	font-weight: 500;
-}
 
 .container {
 	width: 70%;
@@ -363,15 +361,16 @@ ul li p {
 
 
 .skills {
-	background-color: #15192e;
-	padding-top: 20px;
+
+	padding-top: 40px;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 60px;
 }
 
 .projects {
-	padding-top: 20px;
+	background-color: #15192e;
+	padding-top: 40px;
 	padding-bottom: 60px;
 }
 
@@ -425,6 +424,13 @@ ul li p {
 	margin:8px;
 }
 
+.project-heading {
+  color: rgb(22, 166, 233);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
 .project-description {
 	align-text: center;
 	color: #666;
@@ -456,7 +462,7 @@ ul li p {
 
 
 .contactme {
-	background-color: #15192e;
+	
 	margin-top: 36px;
 	padding-top: 20px;
 	padding-bottom: 60px;
